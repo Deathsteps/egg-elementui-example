@@ -84,12 +84,20 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'HelloWorld',
   data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    return this.$store.state.home
+  },
+  methods: {
+    ...mapActions(['fetchData'])
+  },
+  mounted () {
+    setTimeout(() => {
+      this.fetchData()
+    }, 5000)
   }
 }
 </script>

@@ -9,5 +9,9 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.security = {
+    domainWhiteList: [ 'localhost:8080' ],
+  };
+
   return config;
 };
