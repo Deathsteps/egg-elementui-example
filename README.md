@@ -1,6 +1,6 @@
 # egg-elementui-example
 
-> A example site built with eggjs, vue2 and elementui.
+> An example site built with eggjs, vue2 and elementui.
 
 ## Setup Dev Server
 
