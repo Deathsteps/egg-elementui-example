@@ -13,5 +13,10 @@ module.exports = appInfo => {
     domainWhiteList: [ 'localhost:8080' ],
   };
 
+  config.news = {
+    pageSize: 5,
+    serverUrl: 'https://cnodejs.org/api/v1',
+  };
+
   return config;
 };
